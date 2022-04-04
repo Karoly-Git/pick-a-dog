@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch dogs</title>
+    <link rel="shortcut icon" href="./img_p3/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css_p3/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="myNav">
+            <button class="English flag" title="English" id="gb_flag"></button>
+            <button class="Hungarian flag" title="Magyar" id="hun_flag"></button>
+            <button class="Polish flag" title="Polski" id="pl_flag"></button>
+        </nav>
+        <div class="arrow-box">
+            <span class="arrowSpan arrowEng"><img class="arrowIcon" src="./img_p3/arrow.png"
+                    alt="Arrow that shows the selected language"></span>
+            <span class="arrowSpan arrowHun"><img class="arrowIcon" src="./img_p3/arrow.png"
+                    alt="Arrow that shows the selected language"></span>
+            <span class="arrowSpan arrowPol"><img class="arrowIcon" src="./img_p3/arrow.png"
+                    alt="Arrow that shows the selected language"></span>
+        </div>
+        <header class="header">
+            <div class="logo-box">
+                <img class="logo" src="./img_p3/img1.png" alt="Drawing of a puppy with smiley face">
+            </div>
+            <!--<a href="https://dog.ceo/dog-api/">-->
+            <!--</a>-->
+            <div class="title-box">
+                <h1 class="title">Pick a dog</h1>
+            </div>
+        </header>
+        <form action="#">
+            <label>
+                <span id="lebel1">Choose a breed:</span>
+                <br>
+                <select id="breeds">
+                </select>
+            </label>
+            <label>
+                <span id="lebel2">Number of photos:</span>
+                <br>
+                <input placeholder="1-10" min="1" max="10" type="number" id="number">
+            </label>
+        </form>
+        <button id="getPhotos-btn">Show</button>
+        <main>
+            <h2 class="container-title">Photos will appear in this box:</h2>
+            <div class="frame">
+                <div id="picture-container"></div>
+            </div>
+        </main>
+        <footer>
+            <a href="http://www.websiteworking.co.uk/" target="blank">This site is maintained by Karoly Hornyak</a>
+        </footer>
+    </div>
+    <script src="./js_p3/dogpicker.js"></script>
+</body>
+
+</html>
